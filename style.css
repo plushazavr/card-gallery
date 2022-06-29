@@ -1,0 +1,9 @@
+@import url(./fonts/fonts.css);
+@import url(./block/page/page.css);
+@import url(./block/cards/cards.css);
+@import url(./block/card/card.css);
+@import url(./block/card/__info/card__info.css);
+@import url(./block/card/__title/card__title.css);
+@import url(./block/card/__caption/card__caption.css);
+@import url(./block/card/__img/card__img.css);
+@import url(./block/card/__link/card__link.css);

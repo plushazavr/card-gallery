@@ -1,0 +1,66 @@
+.card {
+  width: 270px;
+  background-color: #1e1f25;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 15px 5px 20px -7px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  opacity: 1;
+  transition: all .3s;
+  border: 1px red solid;
+  
+}
+
+.card:hover {
+  transform: scale(1);
+}
+
+
+.card:nth-child(1) {
+  z-index: 1;
+  transform: scale(.9);
+}
+
+.card:nth-child(1):hover {
+  transform: scale(1.1);
+  z-index: 3;
+}
+
+.card:nth-child(1):hover ~ .card:nth-child(2) {
+  transform: scale(.83) translateX(190px); 
+}
+
+.card:nth-child(1):hover ~ .card:nth-child(3) {
+  transform: scale(.88) translateX(190px);
+}
+
+
+.card:nth-child(2) {
+  z-index: 2;
+  margin-left: calc(-6 * 30px);
+  transform: scale(.94);
+  animation: displayCreations .5s linear .4s forwards;
+}
+
+.card:nth-child(2):hover {
+  transform: scale(1.1);
+  z-index: 3;
+}
+
+.card:nth-child(2):hover ~ .card:nth-child(3) {
+  transform: scale(.88) translateX(190px);
+  z-index: 2;
+}
+
+.card:nth-child(3) {
+  z-index: 3;
+  margin-left: calc(-6 * 30px);
+  transform: scale(1.06);
+}
+
+.card:nth-child(3):hover {
+  transform: scale(1.1);
+}
